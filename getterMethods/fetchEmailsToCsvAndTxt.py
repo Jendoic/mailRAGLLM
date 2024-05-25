@@ -6,8 +6,8 @@ import time
 import csv
 
 # Define your credentials
-username = 'your_email_address'
-app_password = 'your_app_password'
+username = "hezekiaholajide3@gmail.com"
+app_password = "ogio bmpu cwmw lmku"
 
 # Function to fetch emails from a specific folder
 def fetch_emails_from_folder(mail, folder, txt_file, csv_writer, processed_ids):

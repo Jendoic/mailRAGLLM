@@ -2,7 +2,7 @@ import openai
 from enhancedQueryParsing import query_emails_with_filters
 
 # Set up your OpenAI API key
-openai.api_key = 'sk-proj-2dsvG2wn88x9LMuRASQsT3BlbkFJA2sDDmnFsWWeSwTMeUFe'
+openai.api_key = 'sk-proj-9RpVp58Bseeqzy7yJYgIT3BlbkFJYnz3LINeg4bTSfDRfdYg'
 
 def generate_human_readable_summary(email_bodies):
     # Prepare the prompt for GPT-4

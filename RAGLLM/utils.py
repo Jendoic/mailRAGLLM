@@ -1,7 +1,9 @@
 import pandas as pd
 import openai
-
-openai.api_key = 'sk-proj-9RpVp58Bseeqzy7yJYgIT3BlbkFJYnz3LINeg4bTSfDRfdYg'
+import os
+from dotenv import load_dotenv
+load_dotenv()
+openai.api_key = os.getenv('OPENAI_API_KEY')
 def generate_human_readable_summary(email_bodies):
     # Prepare the initial part of the prompt for GPT-4
     prompt = """Write a friendly and detailed brief about the following topics. Provide the information in a clear, organized manner with headings and bullet points. Include a summary or call to action at the end. Make sure the entire response is within 8149 tokens. Here are the details:

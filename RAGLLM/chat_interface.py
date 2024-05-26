@@ -1,8 +1,10 @@
+import os
 import openai
+from dotenv import  load_dotenv
 from enhancedQueryParsing import query_emails_with_filters
-
+load_dotenv()
 # Set up your OpenAI API key
-openai.api_key = 'sk-proj-9RpVp58Bseeqzy7yJYgIT3BlbkFJYnz3LINeg4bTSfDRfdYg'
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 def generate_human_readable_summary(email_bodies):
     # Prepare the prompt for GPT-4

@@ -2,8 +2,8 @@ from flask import Flask, jsonify, request
 import pandas as pd
 import openai
 import logging
-from enhancedQueryParsing import query_emails_with_filters
-from utils import generate_human_readable_summary, extract_email_bodies
+from personalmailer.enhancedQueryParsing import query_emails_with_filters
+from personalmailer.utils import generate_human_readable_summary, extract_email_bodies
 
 app = Flask(__name__)
 

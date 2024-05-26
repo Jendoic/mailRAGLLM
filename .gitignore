@@ -1,3 +1,5 @@
 env
 credentials.json
 chat_interface.py
+RAGLLM
+db.sqlite3

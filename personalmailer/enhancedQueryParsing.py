@@ -1,5 +1,5 @@
 from datetime import datetime
-from ragSystem import query_emails
+from .ragSystem import query_emails
 
 def parse_query(query):
     # Basic example of parsing a query for a specific sender and date range

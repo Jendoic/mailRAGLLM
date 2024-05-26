@@ -1,7 +1,7 @@
 import os
 import openai
 from dotenv import  load_dotenv
-from enhancedQueryParsing import query_emails_with_filters
+from personalmailer.enhancedQueryParsing import query_emails_with_filters
 load_dotenv()
 # Set up your OpenAI API key
 openai.api_key = os.getenv('OPENAI_API_KEY')
